@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>connexas: config-get-sap-documents</shortname>
+    <description>Configuration dialog for connexas Get SAP Documents</description>
+    <url>/modules/connexas/get-sap-documents/config</url>
+    <authentication>user</authentication>
+</webscript>

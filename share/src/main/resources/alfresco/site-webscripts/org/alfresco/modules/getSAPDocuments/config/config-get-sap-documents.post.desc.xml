@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>connexas: config-get-sap-documents-post</shortname>
+    <description>Configuration dialog for connexas Get SAP Documents POST</description>
+    <url>/modules/connexas/get-sap-documents/config/{componentId}</url>
+    <format default="json">argument</format>
+</webscript>

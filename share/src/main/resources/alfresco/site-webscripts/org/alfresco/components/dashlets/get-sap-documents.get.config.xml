@@ -1,0 +1,14 @@
+<get-sap-documents>
+    <maxNumberOfDocuments>50</maxNumberOfDocuments>
+    <showOnlyMyDocuments>off</showOnlyMyDocuments>
+    <defaultFilter>connexasReplicate_sapreplicateaspect</defaultFilter>
+    <filters>
+        <!-- Please note as workaround: Avoid the ":" as separator as this is hard to handle in i18n and so on... -->
+        <filter type="connexasArchivelink_saparchivelinkaspect" />
+        <filter type="connexasReplicate_sapreplicateaspect"/>
+        <filter type="connexasCreatearchivelink_sapcreatearchivelinktype" />
+        <filter type="connexasBarcode_sapbarcodetype" />
+        <filter type="connexasWorkflow_sapworkflowtype" />
+    </filters>
+</get-sap-documents>
+

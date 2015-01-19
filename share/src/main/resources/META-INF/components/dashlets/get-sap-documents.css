@@ -1,0 +1,76 @@
+.config-sapdocuments
+{
+}
+
+.getlatestdoc
+{
+}
+
+.getlatestdoc .scrollableList
+{
+   padding: 8px 8px;
+}
+
+#getlatestdoc_item{
+        border-bottom: 1px dashed #E9E9E9;
+}
+#getlatestdoc_item_afb{
+        float:left;
+        margin:5px 12px 10px 5px;
+}
+#getlatestdoc_item_info{
+        padding-left:5px;
+	padding-top:12px;
+	padding-bottom:15px;
+}
+
+.getlatestdoc_toolbar{
+	min-height:28px;
+	padding: 5px 9px 1px;
+	line-height:23px;
+	background-color:#F6F6F6;
+	border-bottom:1px solid lightGrey;
+}
+
+/* Simple/Details View */
+
+/** Display the 'e' in the titlebar of the dashlet.*/
+.connexasIcon
+{
+    background-image: url(../images/connexas-character-e-16.png);
+}
+.connexasSAPDocuments .simple-detailed span.first-child
+{
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   min-height: 16px;
+   padding: 0 2px;
+}
+
+.connexasSAPDocuments .simple-detailed .yui-button
+{
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.connexasSAPDocuments .simple-detailed .simple-view span.first-child
+{
+   background-image: url(../documentlibrary/images/simple-view-off-16.png);
+}
+
+.connexasSAPDocuments .simple-detailed .simple-view.yui-button-checked span.first-child
+{
+   background-image: url(../documentlibrary/images/simple-view-on-16.png);
+}
+
+.connexasSAPDocuments .simple-detailed .detailed-view span.first-child
+{
+   background-image: url(../documentlibrary/images/detailed-view-off-16.png);
+}
+
+.connexasSAPDocuments .simple-detailed .detailed-view.yui-button-checked span.first-child
+{
+   background-image: url(../documentlibrary/images/detailed-view-on-16.png);
+}
+
+

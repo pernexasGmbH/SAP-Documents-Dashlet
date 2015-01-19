@@ -1,0 +1,12 @@
+<webscript>
+	<shortname>connexas: Get SAP Documents</shortname>
+	<description>Return all SAP connected documents from repo based on content-type, creator and number of results</description>
+    <url>/connexas/get-sap-documents/{type}/site/{site}/{container}/{path}</url>
+    <url>/connexas/get-sap-documents/{type}/site/{site}/{container}</url>
+    <url>/connexas/get-sap-documents/{type}/node/{store_type}/{store_id}/{id}/{path}</url>
+    <url>/connexas/get-sap-documents/{type}/node/{store_type}/{store_id}/{id}</url>
+    <format default="json">argument</format>
+    <family>pernexas</family>
+    <authentication>user</authentication>
+    <transaction>required</transaction>
+</webscript>

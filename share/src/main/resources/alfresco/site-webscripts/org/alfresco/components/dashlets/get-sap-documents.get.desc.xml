@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>connexas: Show SAP Documents in Alfresco</shortname>
+    <description>Get SAP documents based on filter (or configuration dialog)</description>
+    <family>dashlet</family>
+    <url>/components/dashlets/connexas/get-sap-documents</url>
+    <authentication>user</authentication>
+</webscript>
