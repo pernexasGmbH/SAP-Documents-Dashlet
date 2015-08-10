@@ -1,5 +1,4 @@
 # SAP-Documents-Dashlet
-Dashlet display documents that are linked to SAP via connexas. 
+Complimentary dashlet to display documents that are linked to SAP via connexas. 
 
-As the provider of the certified Alfresco-SAP interface "connexas" we a proud of offer our customers this enhancement for free.
-
+We are proud to offer this complimentary dashlet to all our customers for free. You are allowed to install and use it. You even can change the code if desired. Please note, there is no guarantee on it. Also refer to the wiki page.
