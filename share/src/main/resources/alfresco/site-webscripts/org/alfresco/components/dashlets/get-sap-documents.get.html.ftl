@@ -57,19 +57,24 @@
                     <div id="${id}-simpleDetailed" class="align-right simple-detailed yui-buttongroup inline">
                       <span class="yui-button yui-radio-button simple-view<#if prefSimpleView> yui-button-checked yui-radio-button-checked</#if>">
                          <span class="first-child">
-                            <button type="button" tabindex="0" title="${msg("button.view.simple")}"></button>
+                            <button type="button" tabindex="0" title='${msg("button.view.simple")}'></button>
                          </span>
                       </span>
                       <span class="yui-button yui-radio-button detailed-view<#if !prefSimpleView> yui-button-checked yui-radio-button-checked</#if>">
                          <span class="first-child">
-                            <button type="button" tabindex="0" title="${msg("button.view.detailed")}"></button>
+                            <button type="button" tabindex="0" title='${msg("button.view.detailed")}'></button>
                          </span>
                       </span>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="body scrollableList"<#if args.height??> style="height: ${args.height}px;"</#if> >
+
+            <#if args.height??>
+                <div class="body scrollableList" style="height: ${args.height}px;">
+            <#else>
+                <div class="body scrollableList">
+            </#if>
                 <div id="${id}-documents"></div>
             </div>
         </div>

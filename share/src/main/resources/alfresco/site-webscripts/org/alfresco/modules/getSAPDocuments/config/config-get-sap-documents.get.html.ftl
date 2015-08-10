@@ -43,8 +43,8 @@
           </div>
 
         <div class="bdft">
-            <input type="submit" id="${el}-ok" value="${msg("button.ok")}" />
-            <input type="reset" id="${el}-cancel" value="${msg("button.cancel")}" />
+            <input type="submit" id="${el}-ok" value='${msg("button.ok")}' />
+            <input type="reset" id="${el}-cancel" value='${msg("button.cancel")}' />
          </div>
       </form>
    </div>

@@ -188,15 +188,14 @@
          */
         onConfigGetLatestDocClick: function GetLatestDoc_onConfigGetLatestDocClick(e)
         {
-            Event.stopEvent(e);
+            //Event.stopEvent(e);
             var actionUrl = Alfresco.constants.URL_SERVICECONTEXT + "modules/connexas/get-sap-documents/config/" + encodeURIComponent(this.options.componentId);
             if (!this.configDialog)
             {
                 this.configDialog = new Alfresco.module.SimpleDialog(this.id + "-configDialog").setOptions(
                 {
-                    width: "30em",
+                    width: "40em",
                     templateUrl: Alfresco.constants.URL_SERVICECONTEXT + "modules/connexas/get-sap-documents/config",
-                    actionUrl: actionUrl,
                     onSuccess:
                     {
                         fn: function GetLatestDoc_onConfig_callback(response)
@@ -264,7 +263,8 @@
 
             this.configDialog.setOptions(
             {
-                componentId: this.options.componentId,
+                actionUrl: actionUrl,
+                componentId: encodeURIComponent(this.options.componentId),
                 siteId: this.options.siteId,
                 validFilters : {},
                 filter: defaultFilter,
