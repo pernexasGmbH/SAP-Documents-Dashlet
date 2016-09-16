@@ -39,6 +39,11 @@
 {
     background-image: url(../images/connexas-character-e-16.png);
 }
+.connexasAdminPanelIcon
+{
+    background-image: url(../images/connexas-adminpanel-16.png);
+}
+
 .connexasSAPDocuments .simple-detailed span.first-child
 {
    background-position: 50% 50%;

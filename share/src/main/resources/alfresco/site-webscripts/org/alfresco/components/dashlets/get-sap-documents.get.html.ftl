@@ -1,12 +1,15 @@
 <!-- #START header stuff-->
 <#include "/org/alfresco/components/component.head.inc">
+<!-- Alfresco 5.1 locations -->
 <!-- Simple Dialog -->
-<@script type="text/javascript" src="${page.url.context}/modules/simple-dialog.js"></@script>
+<@script type="text/javascript" src="${url.context}/res/modules/simple-dialog.js"></@script>
+
 <!-- Global Folder Select -->
-<@link rel="stylesheet" type="text/css" href="${page.url.context}/modules/documentlibrary/global-folder.css" />
-<@script type="text/javascript" src="${page.url.context}/modules/documentlibrary/global-folder.js"></@script>
+<@link rel="stylesheet" type="text/css" href="${url.context}/res/modules/documentlibrary/global-folder.css" />
+<@script type="text/javascript" src="${url.context}/res/modules/documentlibrary/global-folder.js"></@script>
+
 <!-- Resize -->
-<@script type="text/javascript" src="${page.url.context}/res/yui/resize/resize.js"></@script>
+<@script type="text/javascript" src="${url.context}/res/yui/resize/resize.js"></@script>
 <!-- #END header stuff-->
 <@markup id="css">
 <#-- CSS Dependencies -->
@@ -24,11 +27,13 @@
     <@inlineScript group="dashlets">
         var editDashletEvent${element} = new YAHOO.util.CustomEvent("onConfigGetLatestDocClick");
         var websiteIcon${element} = new YAHOO.util.CustomEvent("onWebsiteIconClick");
+        var websiteAdminPanelIcon${element} = new YAHOO.util.CustomEvent("onWebsiteAdminPanelIconClick");
     </@>
     <@createWidgets group="dashlets"/>
     <@inlineScript group="dashlets">
         editDashletEvent${element}.subscribe(connexasDocuments.onConfigGetLatestDocClick, connexasDocuments, true);
         websiteIcon${element}.subscribe(connexasDocuments.onWebsiteIconClick, connexasDocuments, true);
+        websiteAdminPanelIcon${element}.subscribe(connexasDocuments.onWebsiteAdminPanelIconClick, connexasDocuments, true);
     </@>
 </@>
 

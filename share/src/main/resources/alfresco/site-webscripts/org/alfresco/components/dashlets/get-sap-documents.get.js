@@ -112,6 +112,7 @@ function main()
    };
 
     var icons = [];
+
     icons.push({
         cssClass: "connexasIcon",
         eventOnClick: {
@@ -119,6 +120,15 @@ function main()
             _alfType: "REFERENCE"
          },
         tooltip:  msg.get("connexas.documentsDashlet.connexasIcon.tooltip")
+    });
+
+    icons.push({
+        cssClass: "connexasAdminPanelIcon",
+        eventOnClick: {
+            _alfValue : "websiteAdminPanelIcon" + args.htmlid.replace(/-/g, "_"),
+            _alfType: "REFERENCE"
+         },
+        tooltip:  msg.get("connexas.documentsDashlet.connexasAdminPanelIcon.tooltip")
     });
 
     icons.push({

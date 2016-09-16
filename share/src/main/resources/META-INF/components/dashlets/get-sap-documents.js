@@ -179,6 +179,18 @@
             window.open('http://www.connexas.eu', '_blank');
         },
 
+      /**
+         * Called when the user clicks the connexas AdminPanel icon.
+         * Will open the connexa AdminPanel.
+         *
+         * @method onWebsiteAdminPanelIconClick
+         * @param e The click event
+         */
+        onWebsiteAdminPanelIconClick: function GetLatestDoc_onWebsiteAdminPanelIconClick(e)
+        {
+            //http://localhost:8080/share/page/console/admin-console/adminpanel
+            window.open(Alfresco.constants.URL_SERVICECONTEXT + 'console/admin-console/adminpanel', '_self');
+        },
         /**
          * Called when the user clicks the config GetLatestDoc link.
          * Will open a GetLatestDoc config dialog
